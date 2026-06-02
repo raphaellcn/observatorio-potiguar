@@ -1,37 +1,35 @@
-# Observatório do Mercado de Trabalho
+# Observatório Potiguar
 
-Site estático para publicação dos boletins da SEPLAN/Pau dos Ferros no GitHub Pages.
+**Observatório Econômico e Social do Rio Grande do Norte**
+
+Projeto independente de análise de dados públicos desenvolvido por Raphael Lucena.
+
+O portal está organizado por eixos temáticos e pode crescer gradualmente com novos painéis, boletins e estudos.
 
 ## Estrutura
 
 ```text
 docs/
   index.html
+  eixos/
+    mercado-trabalho/
+    financas-publicas/
+    economia-regional/
+    saude/
+    educacao/
+    sistema-financeiro-pagamentos/
+    desenvolvimento-municipal/
+  publicacoes/
+  dados-metodos/
+  sobre/
   boletins/
     boletim-01-caged/
     boletim-02-rais/
 ```
 
-O GitHub Pages deve ser configurado para publicar a partir da pasta `docs` na branch principal.
+## Publicação no GitHub Pages
 
-## Como publicar no GitHub
-
-### Opção 1: pelo Git/Git Bash
-
-1. Crie um repositório no GitHub, por exemplo `observatorio-mt`.
-2. No terminal, dentro desta pasta, rode:
-
-```bash
-git init
-git add .
-git commit -m "Publica site inicial dos boletins"
-git branch -M main
-git remote add origin https://github.com/raphaellcn/observatorio-mt.git
-git push -u origin main
-```
-
-3. No GitHub, acesse `Settings > Pages`.
-4. Em `Build and deployment`, selecione:
+Configure o GitHub Pages para publicar a partir da pasta `docs`:
 
 ```text
 Source: Deploy from a branch
@@ -39,20 +37,21 @@ Branch: main
 Folder: /docs
 ```
 
-5. A página ficará disponível em:
+URL esperada:
 
 ```text
 https://raphaellcn.github.io/observatorio-mt/
 ```
 
-### Opção 2: pelo GitHub Desktop ou upload no site
+## Atualização
 
-Se o comando `git` não estiver disponível no terminal, use o GitHub Desktop ou envie os arquivos pelo próprio GitHub:
+Para atualizar o site:
 
-1. Crie o repositório `observatorio-mt`.
-2. Envie todo o conteúdo desta pasta, mantendo a pasta `docs`.
-3. Configure o GitHub Pages para publicar `main` + `/docs`.
+1. Edite ou adicione arquivos dentro de `docs`.
+2. Abra o GitHub Desktop.
+3. Faça commit das alterações.
+4. Clique em `Push origin`.
 
-## Atualização dos boletins
+## Eixo ativo
 
-Quando um boletim for atualizado, copie a nova versão HTML/PDF para a pasta correspondente em `docs/boletins/` e faça novo commit.
+No momento, o eixo **Mercado de Trabalho** é o mais desenvolvido, com boletins baseados no Novo CAGED e na RAIS.
