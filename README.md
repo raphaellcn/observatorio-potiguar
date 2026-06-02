@@ -1,4 +1,4 @@
-# Observatório Potiguar
+﻿# Observatório Potiguar
 
 **Observatório Econômico e Social do Rio Grande do Norte**
 
@@ -40,7 +40,7 @@ Folder: /docs
 URL esperada:
 
 ```text
-https://raphaellcn.github.io/observatorio-mt/
+https://raphaellcn.github.io/observatorio-potiguar/
 ```
 
 ## Atualização
@@ -55,3 +55,4 @@ Para atualizar o site:
 ## Eixo ativo
 
 No momento, o eixo **Mercado de Trabalho** é o mais desenvolvido, com boletins baseados no Novo CAGED e na RAIS.
+
