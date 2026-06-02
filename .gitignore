@@ -1,0 +1,10 @@
+.Rproj.user/
+.quarto/
+_freeze/
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz
+Thumbs.db
+desktop.ini
